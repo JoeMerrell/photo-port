@@ -16,7 +16,6 @@ function App() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
-  
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
@@ -40,6 +39,20 @@ function App() {
       ) : (
           <ContactForm></ContactForm>
         )}
+
+      {/* preceding code is the same as: */}
+
+      {/* if(!contactSelected) {
+        <>
+          <Gallery currentCategory={currentCategory}></Gallery>
+          <About></About>
+        </> 
+      } else {
+          <ContactForm></ContactForm>
+      } */}
+
+
+
 
       </main>
     </div>
